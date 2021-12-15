@@ -246,6 +246,9 @@ public class IonParser
             }
             _closed = true;
         }
+        if (_reader != null) {
+            _reader.close();
+        }
     }
 
     /*
